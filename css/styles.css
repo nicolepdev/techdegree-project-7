@@ -1,0 +1,63 @@
+html {
+  background-color: #3f94a1;
+}
+
+/* Grid */
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+  color: #333;
+  letter-spacing: 0.0325em;
+}
+
+.container {
+  height: 100vh;
+  margin: 5px -10px 5px -10px;
+  display: grid;
+  grid-template-columns: 80px 10fr;
+  grid-template-rows: 100px minmax(200px, 1fr) 100px;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  background-color: #3f94a1;
+}
+.main {
+    background-color: #fff;
+    margin-left: -10px;
+}
+.aside {
+  background-color: #3dba98;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Didact Gothic', sans-serif;
+}
+.appName {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+.trademark {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 100;
+}
