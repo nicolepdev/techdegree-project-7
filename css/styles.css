@@ -172,12 +172,12 @@ input[name="q"]{
   align-self: center;
   width: 65%;
   height: 40px;
-  background-color: #5dba5e;
+  background-color: #EADF74;
   border-radius: 5px;
   margin-top: 15px;
   padding-right: 10px;
   padding-left: 10px;
-  color: #fff;
+  color: #808080;
 }
 .alert-p {
   margin-right: auto;
@@ -190,7 +190,7 @@ button {
   background-color: transparent;
   border: none;
   font-size: 1.3em;
-  color: #fff;
+  color: #808080;
   outline: none;
 }
 .footer {
