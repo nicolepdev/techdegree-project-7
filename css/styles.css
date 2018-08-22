@@ -178,6 +178,7 @@ input[name="q"]{
   padding-right: 10px;
   padding-left: 10px;
   color: #808080;
+  box-shadow: 2px 2px 2px 1px rgba(51, 51, 51, .2);
 }
 .alert-p {
   margin-right: auto;
@@ -193,6 +194,9 @@ button {
   color: #808080;
   outline: none;
 }
+.traffic-container {
+  margin: 0 auto;
+}
 .footer {
   height: 5vh;
   padding: 2px;
@@ -206,6 +210,30 @@ button {
   perspective: 1000px;
 }
 
+.social-container {
+  display: flex;
+  justify-content: space-around;
+
+}
+.twitter, .facebook, .googleplus {
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  padding: 20px;
+  width: 15vw;
+  text-align: center;
+}
+.social-stats-container {
+  display: inline-block;
+  margin-left: 15px;
+}
+.social-numbers {
+  font-size: 2.3em;
+  line-height: 0;
+  font-weight: 500;
+}
+.social-stats {
+  font-size: 1.5em;
+}
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);

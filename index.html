@@ -39,36 +39,62 @@
       <form role="search">
     <div class="search-control">
         <input type="search" id="site-search" name="q"
-               placeholder="Search the site..."
-               aria-label="Search through site content">
+               placeholder="Search the dashboard..."
+               aria-label="Search through site content">&nbsp;&nbsp;
     </div>
 </form>
     </div>
   </div>
   <div class="alert">
 <p class="alert-title"><strong>Alert</strong></p>
-<p class="alert-p">Lorem ipsum dolor sit amet</p>
-<button type="button" name="button" class="x">x</button>
+<p class="alert-p">I'm an alert. Click the x to hide me!</p>
+<button type="button" name="button" class="x">×</button>
   </div>
 <div class="traffic">
   <h3>Traffic</h3>
-  <div class="traffic-container">
+  <div class="traffic-container" style="position: relative; height:268px; width: 90vw">
     <canvas id="traffic-chart"></canvas>
   </div>
 </div>
 <div class="traffic-stats">
   <div class="daily-traffic">
     <h3>Daily Traffic</h3>
-    <p>Dreamcatcher green juice vaporware scenester retro VHS. Franzen subway tile PBR&B actually cray 8-bit. IPhone messenger bag cred disrupt etsy art party venmo snackwave gochujang kombucha sriracha slow-carb taxidermy. Helvetica DIY meditation schlitz kogi, migas vape yuccie plaid sustainable listicle knausgaard. Art party copper mug ramps, affogato wayfarers jean shorts pork belly woke DIY shoreditch cred prism. Craft beer lo-fi synth humblebrag vinyl chicharrones bicycle rights authentic kitsch four loko 8-bit YOLO slow-carb vexillologist. Scenester chicharrones quinoa lyft artisan lumbersexual.</p>
+    <div class="daily-traffic-container" style="position: relative; height:190px; width: 45vw">
+      <canvas id="daily-traffic-chart"></canvas>
+    </div>
   </div>
   <div class="mobile-users">
     <h3>Mobile Users</h3>
-    <p>Polaroid hella edison bulb health goth taxidermy. Letterpress hashtag waistcoat man braid, enamel pin vaporware slow-carb locavore air plant poke everyday carry PBR&B ramps mustache. Master cleanse af ennui jianbing cloud bread subway tile, thundercats knausgaard direct trade celiac meditation taxidermy. Etsy echo park butcher chia banh mi chambray, lo-fi slow-carb shaman twee migas waistcoat jianbing enamel pin poke. Chambray pitchfork air plant pork belly hexagon lumbersexual tacos quinoa cronut cornhole vinyl kickstarter twee.</p>
+    <div class="mobile-user-container" style="position: relative; height:180px; width: 25vw">
+      <canvas id="mobile-user-chart"></canvas>
+    </div>
   </div>
 </div>
 <div class="social">
   <h3>Social Stats</h3>
-  <p>Fam XOXO air plant, pour-over microdosing humblebrag unicorn keffiyeh copper mug pork belly tattooed heirloom. Pinterest squid pork belly keffiyeh bitters, put a bird on it taiyaki chicharrones banh mi four dollar toast vegan tattooed waistcoat. Fixie hella next level slow-carb small batch deep v prism. Food truck ugh fingerstache, ethical pitchfork humblebrag VHS fixie skateboard keffiyeh occupy brooklyn af flannel. Iceland edison bulb hashtag squid umami etsy, twee slow-carb craft beer schlitz poutine palo santo freegan vexillologist waistcoat.</p>
+  <div class="social-container">
+  <div class="twitter">
+    <img src="icons/icon-twitter.svg" alt="Twitter stats">
+    <div class="social-stats-container">
+      <h3 class="social-stats">Twitter</h3>
+      <p class="social-numbers">2,765</p>
+    </div>
+  </div>
+  <div class="facebook">
+    <img src="icons/icon-facebook.svg" alt="Facebook stats">
+    <div class="social-stats-container">
+      <h3 class="social-stats">Facebook</h3>
+      <p class="social-numbers">11,876</p>
+    </div>
+  </div>
+  <div class="googleplus">
+    <img src="icons/icon-google-plus.svg" alt="Google Plus stats">
+    <div class="social-stats-container">
+      <h3 class="social-stats">Google +</h3>
+      <p class="social-numbers">1,532</p>
+    </div>
+  </div>
+</div>
 </div>
 </div>
 </div>
