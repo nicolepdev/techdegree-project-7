@@ -1,3 +1,5 @@
+/* Global */
+
 html {
   background-color: #3f94a1;
   box-sizing: border-box;
@@ -5,6 +7,26 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+/* Animations */
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 /* Clearfix */
 
 .clearfix:after {
@@ -29,6 +51,14 @@ aside {
 footer {
   grid-area: footer;
 }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/* Body, Container, Header, Aside, and Main Styles */
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -57,27 +87,11 @@ body {
     display: flex;
     flex-direction: column;
 }
-.traffic-stats {
-  display: flex;
-  flex-direction: row;
-}
-.daily-traffic, .mobile-users {
-  margin: 20px;
-  width: 50%;
-}
 .header {
   margin-top: -10px;
   margin-bottom: -10px;
   margin-left: 10px;
   margin-right: 10px;
-}
-.aside {
-  background-color: #3dba98;
-  height: 100vh;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Didact Gothic', sans-serif;
 }
 .dashboard:hover {
   opacity: .4;
@@ -92,6 +106,36 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-size: 1em;
   font-weight: 100;
+}
+.aside {
+  background-color: #3dba98;
+  height: 100vh;
+}
+.traffic-stats {
+  display: flex;
+  flex-direction: row;
+}
+.daily-traffic, .mobile-users {
+  margin: 20px;
+  width: 50%;
+}
+
+/* Navigation */
+.asideIcons {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -45px;
+}
+.asideIcons li {
+  padding-bottom: 10px;
+}
+.userPhoto {
+  border-radius: 50%;
+  max-width: 30%;
+  margin-right: 10px;
 }
 nav.menu {
   display: flex;
@@ -119,6 +163,9 @@ nav .bell {
 .headerNav-right li {
   margin-right: 0;
 }
+
+/* Traffic Stats */
+
 .traffic, .traffic-stats {
   border-bottom: 1px solid #E0E0E0;
 }
@@ -126,22 +173,8 @@ nav .bell {
   border-right: 1px solid #E0E0E0;
   padding-right: 10px;
 }
-.asideIcons {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: -45px;
-}
-.asideIcons li {
-  padding-bottom: 10px;
-}
-.userPhoto {
-  border-radius: 50%;
-  max-width: 30%;
-  margin-right: 10px;
-}
+/* Search */
+
 .search {
   display: flex;
   flex-direction: row;
@@ -165,6 +198,9 @@ input[name="q"]{
   padding-right: 20px;
   padding-top: 20px;
 }
+
+/* Alert */
+
 .alert {
   display: flex;
   justify-content: space-between;
@@ -210,6 +246,12 @@ button {
   perspective: 1000px;
 }
 
+/* Social Stats */
+
+.social {
+  display: flex;
+}
+
 .social-container {
   display: flex;
   justify-content: space-around;
@@ -233,21 +275,4 @@ button {
 }
 .social-stats {
   font-size: 1.5em;
-}
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
 }

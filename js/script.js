@@ -44,7 +44,7 @@ var chart2 = new Chart(ctx2, {
         labels: ['SUN', 'MON', 'TUE', 'WED', 'THUR', 'FRI', 'SAT'],
         datasets: [{
             label: '',
-            backgroundColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgb(234, 223, 116)',
             borderColor: 'rgb(255, 99, 132)',
             data: [400, 1000, 150, 25, 500, 100, 300],
         }]
@@ -58,7 +58,7 @@ var chart2 = new Chart(ctx2, {
     }
 });
 
-// doughnut chart for mobile Users
+// doughnut chart for mobile users
 
 var chart3 = new Chart(ctx3, {
     type: 'doughnut',
