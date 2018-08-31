@@ -81,6 +81,7 @@ body {
   background-color: #3f94a1;
 }
 .main {
+    display: flex;
     background-color: #fff;
     height: 100vh;
     padding: 10px;
@@ -114,13 +115,18 @@ body {
 .traffic-stats {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .daily-traffic, .mobile-users {
   margin: 20px;
   width: 50%;
 }
+.traffic-stats {
+  display: flex;
+}
 
 /* Navigation */
+
 .asideIcons {
   list-style-type: none;
   display: flex;
@@ -166,6 +172,9 @@ nav .bell {
 
 /* Traffic Stats */
 
+.traffic-container {
+  display: flex;
+}
 .traffic, .traffic-stats {
   border-bottom: 1px solid #E0E0E0;
 }
@@ -250,17 +259,22 @@ button {
 
 .social {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .social-container {
   display: flex;
   justify-content: space-around;
+  align-self: center;
 
 }
 .twitter, .facebook, .googleplus {
   border: 1px solid #E0E0E0;
   border-radius: 2px;
-  padding: 20px;
+  padding: 10px;
+  margin: 20px;
   width: 15vw;
   text-align: center;
 }
@@ -275,4 +289,24 @@ button {
 }
 .social-stats {
   font-size: 1.5em;
+}
+
+/* Members */
+
+.members-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.memberPhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.member {
+  display: flex;
+  padding: 10px;
+
+}
+.member p {
+  margin-left: auto;
 }
