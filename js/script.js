@@ -93,3 +93,17 @@ $('.alert').fadeIn(1000);
 $('.x').click(function () {
   $('.alert').hide();
 });
+$('.x2').click(function () {
+  $('.alert2').hide();
+});
+$('.x3').click(function () {
+  $('.alert3').hide();
+});
+
+$('.alert2').hide();
+$('.alert3').hide();
+
+$('.bell').click(function () {
+  $('.alert2').show();
+  $('.alert3').show();
+});

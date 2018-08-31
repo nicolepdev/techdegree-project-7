@@ -125,7 +125,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-left: -45px;
+  margin-left: -40px;
 }
 .asideIcons li {
   padding-bottom: 10px;
@@ -202,7 +202,7 @@ input[name="q"]{
 
 /* Alert */
 
-.alert {
+.alert, .alert2, .alert3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -464,4 +464,49 @@ select {
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .members-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .members {
+    width: 95%;
+  }
+  .recent {
+    width: 95%;
+  }
+  .settings-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .search {
+    display: none;
+  }
+  .social-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .twitter {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .facebook {
+    width: 55%;
+    margin-bottom: 5px;
+    margin: 0 auto;
+  }
+  .googleplus {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .settings {
+    width: 95%;
+  }
 }
