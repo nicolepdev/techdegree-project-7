@@ -280,13 +280,14 @@ button {
 
 /* Members */
 .members {
-  width: 50%;
+  width: 45%;
 }
 .members-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+  border-bottom: 1px solid #E0E0E0;
 }
 .memberPhoto {
   width: 50px;
@@ -315,7 +316,152 @@ button {
 .date {
   margin-left: auto;
 }
-
+.recent-inner {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 15px;
+  flex-basis: 50%;
+}
 .recent {
   width: 45%;
+}
+
+/* Form */
+input {
+  outline: none;
+}
+.send {
+  background-color: #EADF74;
+  padding: 10px;
+  border-radius: 3px;
+  width: 100%;
+  color: #fff;
+  letter-spacing: 0.0525em;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 1px solid #E0E0E0;
+  outline: none;
+}
+fieldset {
+  border: none;
+}
+#uname {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 1px solid #E0E0E0;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 1px solid #E0E0E0;
+  outline: none;
+  color: #c0c0c0;
+}
+.settings-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.save-button {
+    background-color: #ff6384;
+    padding: 10px;
+    border-radius: 3px;
+    width: 30%;
+    color: #fff;
+    letter-spacing: 0.0525em;
+}
+.cancel-button {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 3px;
+    width: 30%;
+    color: #fff;
+    letter-spacing: 0.0525em;
+    margin-left: 30px;
+}
+/* Settings */
+.settings {
+  width: 45%;
+}
+.settings-inner {
+  display: flex;
+  flex-direction: column;
+}
+.option-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.option-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.email-notifications, .profile-privacy {
+  width: 50%;
+}
+.settings-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #E0E0E0;
+}
+/* Toggle Switch */
+
+.onoffswitch {
+    position: relative; width: 80px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid transparent; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #3DBA98; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #D9D5D5; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: ;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid transparent; border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
 }
