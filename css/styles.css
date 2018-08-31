@@ -113,6 +113,11 @@ body {
   margin: 20px;
   width: 50%;
 }
+.daily-traffic-container {
+  position: relative;
+  height: 160px;
+  width: 40vw;
+}
 .traffic-stats {
   display: flex;
 }
@@ -508,5 +513,24 @@ select {
   }
   .settings {
     width: 95%;
+  }
+  .traffic-stats {
+    display: flex;
+    flex-direction: column;
+  }
+  .daily-traffic {
+    border: none;
+    width: 100%;
+  }
+  .daily-traffic-container {
+    height: 160px;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .mobile-users {
+    width: 100%;
+  }
+  .mobile-user-container {
+    margin: 0 auto;
   }
 }
