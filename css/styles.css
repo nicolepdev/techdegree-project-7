@@ -387,6 +387,12 @@ select {
   text-align: center;
   margin-top: 20px;
 }
+.member-settings {
+  width: 50%;
+}
+.settings {
+  width: 50%;
+}
 .save-button {
     background-color: #ff6384;
     padding: 10px;
@@ -428,8 +434,8 @@ select {
 .settings-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 20px;
-  border-bottom: 1px solid #E0E0E0;
 }
 /* Toggle Switch */
 
