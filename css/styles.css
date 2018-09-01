@@ -557,4 +557,7 @@ select {
   .mobile-user-container {
     margin: 0 auto;
   }
+  .message-wrapper {
+    width: 95%;
+  }
 }
