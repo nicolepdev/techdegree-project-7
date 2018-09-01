@@ -294,6 +294,7 @@ button {
 /* Members */
 .members {
   width: 45%;
+
 }
 .members-wrapper {
   display: flex;
@@ -427,7 +428,6 @@ select {
 .settings-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 20px;
   border-bottom: 1px solid #E0E0E0;
 }
@@ -488,7 +488,6 @@ select {
   }
   .members {
     width: 95%;
-  }
   .recent {
     width: 95%;
   }

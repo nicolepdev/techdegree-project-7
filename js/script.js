@@ -1,3 +1,7 @@
+// autocomplete variables
+
+var directory = ['Nicole Peery', 'Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver'];
+
 // chart variables
 
 Chart.defaults.global.responsive = true;
