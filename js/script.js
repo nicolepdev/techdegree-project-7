@@ -1,3 +1,16 @@
+// autocomplete on user search
+
+$(function() {
+            var directory  =  [
+               "Nicole Peery",
+               "Victoria Chambers",
+               "Dale Byrd",
+               "Dan Oliver",
+            ];
+            $( "#uname" ).autocomplete({
+               source: directory
+            });
+         });
 
 // chart variables
 
