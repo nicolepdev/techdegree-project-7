@@ -53,6 +53,25 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Didact Gothic', sans-serif;
 }
 
+/* Hyperlinks */
+
+a {
+  color: #378997;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: #378997;
+}
+
+a:visited {
+  color: #E0E0E0;
+}
+
 /* Body, Container, Header, Aside, and Main Styles */
 
 body {
@@ -154,7 +173,6 @@ nav.menu {
   color: #fff;
 }
 nav .bell {
-  padding-right: 10px;
   margin-right: -80px;
 }
 .headerNav-left {

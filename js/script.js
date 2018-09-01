@@ -172,8 +172,8 @@ $('.alert2').hide();
 $('.alert3').hide();
 
 $('.bell').click(function () {
-  $('.alert2').show();
-  $('.alert3').show();
+  $('.alert2').fadeIn(1000);
+  $('.alert3').fadeIn(1000);
 });
 
 // daily, weekly, and monthly charts
