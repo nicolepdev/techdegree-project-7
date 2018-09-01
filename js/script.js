@@ -19,6 +19,8 @@ Chart.defaults.global.maintainAspectRatio = false;
 var ctx1 = document.getElementById("traffic-chart").getContext('2d');
 var ctx2 = document.getElementById("daily-traffic-chart").getContext('2d');
 var ctx3 = document.getElementById("mobile-user-chart").getContext('2d');
+var ctx4 = document.getElementById("traffic-chart2").getContext('2d');
+var ctx5 = document.getElementById("traffic-chart3").getContext('2d');
 
 // line chart for overall traffic
 
@@ -99,6 +101,58 @@ var chart3 = new Chart(ctx3, {
     }
 });
 
+// additional charts for month and day buttons
+
+var chart4 = new Chart(ctx4, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['12-23', '01-10', '1-17', '2-02', '2-10', '2-17', '03-03', '3-10', '4-10', '4-17', '5-01'],
+        datasets: [{
+            label: "# of visitors",
+            backgroundColor: 'rgb(76, 189, 139)',
+            borderColor: 'rgb(76, 189, 139)',
+            data: [400, 1500, 150, 50, 500, 100, 550, 10, 1500, 2500, 1000],
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      elements: {
+            line: {
+                tension: 0, // disables bezier curves
+            }
+        }
+    }
+});
+
+var chart5 = new Chart(ctx5, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
+        datasets: [{
+            label: "# of visitors",
+            backgroundColor: 'rgb(55, 137, 151)',
+            borderColor: 'rgb(55, 137, 151)',
+            data: [400, 1000, 150, 25, 500, 100, 500, 10, 1500, 2000, 2500],
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      elements: {
+            line: {
+                tension: 0, // disables bezier curves
+            }
+        }
+    }
+});
+
 // alert button fade in and hide
 
 $('.alert').hide();
@@ -120,4 +174,25 @@ $('.alert3').hide();
 $('.bell').click(function () {
   $('.alert2').show();
   $('.alert3').show();
+});
+
+// daily, weekly, and monthly charts
+$('#traffic-chart2').hide();
+$('#traffic-chart3').hide();
+
+$('#week').click(function () {
+  $('#traffic-chart').show();
+  $('#traffic-chart2').hide();
+  $('#traffic-chart3').hide();
+});
+$('#month').click(function () {
+  $('#traffic-chart').hide();
+  $('#traffic-chart2').show();
+  $('#traffic-chart3').hide();
+});
+$('#day').click(function () {
+  $('#traffic-chart').hide();
+  $('#traffic-chart2').hide();
+  $('#traffic-chart3').show();
+
 });

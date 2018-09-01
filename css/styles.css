@@ -368,6 +368,9 @@ textarea {
 fieldset {
   border: none;
 }
+input[type="radio"]:focus {
+    outline: none;
+}
 #uname {
   width: 100%;
   padding: 5px;
