@@ -121,6 +121,14 @@ body {
 .traffic-stats {
   display: flex;
 }
+.traffic-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.switch-toggle {
+  margin-left: auto;
+}
 
 /* Navigation */
 

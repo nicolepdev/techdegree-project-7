@@ -8,17 +8,18 @@
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Nunito:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/toggle-switch-rem.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <header>
   <div class="header">
   <nav class="menu">
   <ul class="headerNav-left">
-    <li><span class="appName">Your<strong>App</strong></span><span class="trademark">&trade;</span></li></ul>
+    <li><span class="appName">Nicky<strong>App</strong></span><span class="trademark">&trade;</span></li></ul>
   <ul class="headerNav-right">
     <li><img src="icons/icon-bell.svg" alt="Notifications" class="bell"></li>
-    <li><img src="images/member-1.jpg" alt="User Name" class="userPhoto"></li>
-    <li>User Name</li>
+    <li><img src="images/member-nicole.png" alt="User Name" class="userPhoto"></li>
+    <li>Nicole Peery</li>
   </ul>
   </nav>
 </div>
@@ -64,7 +65,23 @@
 <button type="button" name="button" class="x3">×</button>
   </div>
 <div class="traffic">
-  <h3>Traffic</h3>
+  <div class="traffic-bar">
+    <h3>Traffic</h3>
+    <fieldset>
+  <div class="switch-toggle switch-candy">
+    <input id="week" name="view" type="radio" checked>
+    <label for="week" onclick="">Week</label>
+
+    <input id="month" name="view" type="radio">
+    <label for="month" onclick="">Month</label>
+
+    <input id="day" name="view" type="radio">
+    <label for="day" onclick="">Day</label>
+
+    <a></a>
+  </div>
+</fieldset>
+</div>
   <div class="traffic-container" style="position: relative; height:268px; width: 90vw">
     <canvas id="traffic-chart"></canvas>
   </div>
