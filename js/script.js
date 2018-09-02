@@ -1,30 +1,32 @@
 // local storage
 
 var saveButton = $('#save-button');
+let emailNotifications = $('#myonoffswitch');
+let profilePrivacy = $('#myonoffswitch2');
 
 saveButton.click((event) => {
 
-  const currentTimezone = $('#timezone-select option:selected').val(); // reminder to self: you found this on StackOverflow
+  const currentTimezone = $('#timezone-select option:selected').val();
+   // reminder to self: you found this on StackOverflow
 
   if (currentTimezone === 'select') {
     console.log('Please choose your timezone');
   } else {
-    var timezone = {
-      timezone: currentTimezone
+    var info = {
+      timezone: currentTimezone,
+      emailpref: emailNotifications,
+      profilepref: profilePrivacy
     };
-    userInfo = JSON.stringify(timezone); // note to self: reference video on local storage by Zac Gordon
+    info = JSON.stringify(info); // note to self: reference video on local storage by Zac Gordon
 
-    localStorage.setItem('timezone', currentTimezone);
-
-    console.log('Great, your data is saved');
+    localStorage.setItem('info', info);
+    alert('Great, your data is saved');
   }
 });
 
 $(window).on("load", function() {
-
-	var storedValue = localStorage.getItem("timezone");
-	$("#timezone-select").val(storedValue);
-
+	var storedTimezone = localStorage.getItem("timezone");
+	$("#timezone-select").val(storedTimezone);
 });
 
 // autocomplete on user search
@@ -228,14 +230,9 @@ $('#day').click(function () {
 
 // Settings switches
 
-$(document).ready(function() {
-  $('#myonoffswitch').click(function() {
-    $(this).toggleClass("off");
-  });
+profilePrivacy.click((event) => {
+  profilePrivacy =! profilePrivacy;
 });
-
-$(document).ready(function() {
-  $('#myonoffswitch2').click(function() {
-    $(this).toggleClass("off");
-  });
+emailNotifications.click((event) => {
+  emailNotifications =! emailNotifications;
 });
