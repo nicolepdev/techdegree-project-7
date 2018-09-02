@@ -18,9 +18,9 @@ saveButton.click((event) => {
       emailpref: emailNotifications,
       profilepref: profilePrivacy
     };
-    info = JSON.stringify(info); // note to self: reference video on local storage by Zac Gordon
+    userInfo = JSON.stringify(timezone); // note to self: reference video on local storage by Zac Gordon
 
-    localStorage.setItem('info', info);
+    localStorage.setItem('timezone', currentTimezone);
     alert('Great, your data is saved');
   }
 });
@@ -231,9 +231,14 @@ $('#day').click(function () {
 
 // Settings switches
 
-profilePrivacy.click((event) => {
-  profilePrivacy =! profilePrivacy;
+$(document).ready(function() {
+  $('#myonoffswitch').click(function() {
+    $(this).toggleClass("off");
+  });
 });
-emailNotifications.click((event) => {
-  emailNotifications =! profilePrivacy;
+
+$(document).ready(function() {
+  $('#myonoffswitch2').click(function() {
+    $(this).toggleClass("off");
+  });
 });
