@@ -27,6 +27,8 @@ saveButton.click((event) => {
 $(window).on("load", function() {
 	var storedTimezone = localStorage.getItem("timezone");
 	$("#timezone-select").val(storedTimezone);
+  var storedEmail = localStorage.getItem("emailpref");
+	$("#myonoffswitch").val(storedEmail);
 });
 
 // autocomplete on user search
