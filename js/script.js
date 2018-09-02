@@ -229,14 +229,30 @@ $('#day').click(function () {
 
 // Settings switches
 
-$(document).ready(function() {
-  $('#myonoffswitch').click(function() {
-    $(this).toggleClass("off");
-  });
+$('#myonoffswitch').click(function(e){
+	if (e.target.checked) {
+  	localStorage.checked = true;
+  } else {
+  	localStorage.checked = false;
+  }
+})
+
+$( document ).ready(function() {
+
+	document.querySelector('#myonoffswitch').checked = localStorage.checked
+
 });
 
-$(document).ready(function() {
-  $('#myonoffswitch2').click(function() {
-    $(this).toggleClass("off");
-  });
+$('#myonoffswitch2').click(function(e){
+	if (e.target.checked) {
+  	localStorage.checked = true;
+  } else {
+  	localStorage.checked = false;
+  }
+})
+
+$( document ).ready(function() {
+
+	document.querySelector('#myonoffswitch2').checked = localStorage.checked
+
 });
