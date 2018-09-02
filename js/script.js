@@ -1,3 +1,32 @@
+// local storage
+
+var saveButton = $('#save-button');
+
+saveButton.click((event) => {
+
+  const currentTimezone = $('#timezone-select option:selected').val(); // reminder to self: you found this on StackOverflow
+
+  if (currentTimezone === 'select') {
+    console.log('Please choose your timezone');
+  } else {
+    var timezone = {
+      timezone: currentTimezone
+    };
+    userInfo = JSON.stringify(timezone); // note to self: reference video on local storage by Zac Gordon
+
+    localStorage.setItem('timezone', currentTimezone);
+
+    console.log('Great, your data is saved');
+  }
+});
+
+$(window).on("load", function() {
+
+	var storedValue = localStorage.getItem("timezone");
+	$("#timezone-select").val(storedValue);
+
+});
+
 // autocomplete on user search
 
 $(function() {
@@ -195,4 +224,18 @@ $('#day').click(function () {
   $('#traffic-chart2').hide();
   $('#traffic-chart3').show();
 
+});
+
+// Settings switches
+
+$(document).ready(function() {
+  $('#myonoffswitch').click(function() {
+    $(this).toggleClass("off");
+  });
+});
+
+$(document).ready(function() {
+  $('#myonoffswitch2').click(function() {
+    $(this).toggleClass("off");
+  });
 });

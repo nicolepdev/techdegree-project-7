@@ -326,6 +326,9 @@ button {
   height: 50px;
   border-radius: 50%;
 }
+.member-inner:last-child {
+  border: none;
+}
 .member-inner {
   display: flex;
   flex-direction: row;
@@ -354,6 +357,9 @@ button {
   border-bottom: 1px solid #E0E0E0;
   margin-bottom: 15px;
   flex-basis: 50%;
+}
+.recent-inner:last-child {
+  border: none;
 }
 .recent {
   width: 45%;
