@@ -253,6 +253,6 @@ $('#myonoffswitch2').click(function(e){
 
 $( document ).ready(function() {
 
-	document.querySelector('#myonoffswitch2').checked = localStorage.checked
+	document.querySelector('#myonoffswitch2').checked = localStorage.checked2
 
 });
