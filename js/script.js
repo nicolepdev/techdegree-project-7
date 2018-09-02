@@ -245,9 +245,9 @@ $( document ).ready(function() {
 
 $('#myonoffswitch2').click(function(e){
 	if (e.target.checked) {
-  	localStorage.checked = true;
+  	localStorage.checked2 = true;
   } else {
-  	localStorage.checked = false;
+  	localStorage.checked2 = false;
   }
 })
 
