@@ -1,13 +1,14 @@
 // local storage
 
 var saveButton = $('#save-button');
-let emailNotifications = $('#myonoffswitch');
-let profilePrivacy = $('#myonoffswitch2');
 
 saveButton.click((event) => {
 
   const currentTimezone = $('#timezone-select option:selected').val();
    // reminder to self: you found this on StackOverflow
+
+   let emailNotifications = $('#myonoffswitch');
+   let profilePrivacy = $('#myonoffswitch2');
 
   if (currentTimezone === 'select') {
     console.log('Please choose your timezone');
@@ -23,7 +24,6 @@ saveButton.click((event) => {
     alert('Great, your data is saved');
   }
 });
-
 
 $(window).on("load", function() {
 	var storedTimezone = localStorage.getItem("timezone");
@@ -235,5 +235,5 @@ profilePrivacy.click((event) => {
   profilePrivacy =! profilePrivacy;
 });
 emailNotifications.click((event) => {
-  emailNotifications =! emailNotifications;
+  emailNotifications =! profilePrivacy;
 });
