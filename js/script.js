@@ -13,10 +13,8 @@ saveButton.click((event) => {
   if (currentTimezone === 'select') {
     console.log('Please choose your timezone');
   } else {
-    var info = {
-      timezone: currentTimezone,
-      emailpref: emailNotifications,
-      profilepref: profilePrivacy
+    var timezone = {
+      timezone: currentTimezone
     };
     userInfo = JSON.stringify(timezone); // note to self: reference video on local storage by Zac Gordon
 
