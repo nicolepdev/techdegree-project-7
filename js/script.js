@@ -2,7 +2,7 @@
 
 var saveButton = $('#save-button');
 
-saveButton.click((event) => {
+saveButton.click( ( event ) => {
 
   const currentTimezone = $('#timezone-select option:selected').val();
    // reminder to self: you found this on StackOverflow
@@ -10,8 +10,8 @@ saveButton.click((event) => {
    let emailNotifications = $('#myonoffswitch');
    let profilePrivacy = $('#myonoffswitch2');
 
-  if (currentTimezone === 'select') {
-    console.log('Please choose your timezone');
+  if ( currentTimezone === 'select' ) {
+    alert('Please choose your timezone');
   } else {
     var timezone = {
       timezone: currentTimezone
@@ -23,7 +23,33 @@ saveButton.click((event) => {
   }
 });
 
-$(window).on("load", function() {
+// Settings switches
+
+$( '#myonoffswitch' ).click(function(e){
+	if (e.target.checked) {
+  	localStorage.checked = true;
+  } else {
+  	localStorage.checked = false;
+  }
+});
+
+$( document ).ready(function() {
+	document.querySelector( '#myonoffswitch' ).checked = localStorage.checked
+});
+
+$( '#myonoffswitch2' ).click(function(e){
+	if ( e.target.checked ) {
+  	localStorage.checked2 = true;
+  } else {
+  	localStorage.checked2 = false;
+  }
+});
+
+$( document ).ready(function() {
+	document.querySelector( '#myonoffswitch2' ).checked = localStorage.checked2
+});
+
+$( window ).on( "load", function () {
 	var storedTimezone = localStorage.getItem("timezone");
 	$("#timezone-select").val(storedTimezone);
 });
@@ -207,6 +233,7 @@ $('.bell').click(function () {
 });
 
 // daily, weekly, and monthly charts
+
 $('#traffic-chart2').hide();
 $('#traffic-chart3').hide();
 
@@ -224,35 +251,5 @@ $('#day').click(function () {
   $('#traffic-chart').hide();
   $('#traffic-chart2').hide();
   $('#traffic-chart3').show();
-
-});
-
-// Settings switches
-
-$('#myonoffswitch').click(function(e){
-	if (e.target.checked) {
-  	localStorage.checked = true;
-  } else {
-  	localStorage.checked = false;
-  }
-})
-
-$( document ).ready(function() {
-
-	document.querySelector('#myonoffswitch').checked = localStorage.checked
-
-});
-
-$('#myonoffswitch2').click(function(e){
-	if (e.target.checked) {
-  	localStorage.checked2 = true;
-  } else {
-  	localStorage.checked2 = false;
-  }
-})
-
-$( document ).ready(function() {
-
-	document.querySelector('#myonoffswitch2').checked = localStorage.checked2
 
 });
