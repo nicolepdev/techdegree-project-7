@@ -148,7 +148,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 20px 0px 10px;
 }
 .switch-toggle {
   margin-left: auto;
@@ -202,6 +202,7 @@ nav.menu {
 
 .traffic-container {
   display: flex;
+  width: 80%;
 }
 .traffic, .traffic-stats {
   border-bottom: 1px solid #E0E0E0;
@@ -313,7 +314,7 @@ button {
 
 /* Members */
 .members {
-  width: 95%;
+  width: 90%;
 
 }
 .members-wrapper {
@@ -361,7 +362,7 @@ button {
   border: none;
 }
 .recent {
-  width: 95%;
+  width: 90%;
 }
 
 /* Form */
@@ -442,10 +443,10 @@ select {
 /* Settings */
 .message-wrapper {
   display: inline-block;
-  width: 100%;
+  width: 98%;
 }
 .settings {
-  width: 100%;
+  width: 98%;
 }
 .settings-inner {
   display: flex;
