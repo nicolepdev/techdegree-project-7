@@ -125,18 +125,19 @@ body {
 }
 .traffic-stats {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 .daily-traffic, .mobile-users {
   margin: 20px;
-  width: 50%;
+  width: 100%;
 }
-.daily-traffic-container {
+.daily-traffic-container, .mobile-user-container {
   position: relative;
   height: 160px;
-  width: 40vw;
+  width: 80vw;
 }
+
 .traffic-stats {
   display: flex;
 }
@@ -144,6 +145,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0px 10px 0px 10px;
 }
 .switch-toggle {
   margin-left: auto;
@@ -201,17 +203,11 @@ nav.menu {
 .traffic, .traffic-stats {
   border-bottom: 1px solid #E0E0E0;
 }
-.daily-traffic {
-  border-right: 1px solid #E0E0E0;
-  padding-right: 10px;
-}
+
 /* Search */
 
 .search {
-  display: flex;
-  flex-direction: row;
-  margin-top: -10px;
-  margin-right: -10px;
+  display: none;
 }
 .search-bar {
   border-bottom: 1px solid #ccc;
@@ -284,8 +280,10 @@ button {
 
 .social-container {
   display: flex;
-  justify-content: space-around;
-  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  padding-bottom: 40px;
 
 }
 .twitter, .facebook, .googleplus {
@@ -293,7 +291,7 @@ button {
   border-radius: 2px;
   padding: 10px;
   margin: 50px;
-  width: 15vw;
+  width: 95%;
   text-align: center;
 }
 .social-stats-container {
@@ -311,15 +309,12 @@ button {
 
 /* Members */
 .members {
-  width: 45%;
+  width: 95%;
 
 }
 .members-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-  border-bottom: 1px solid #E0E0E0;
+  flex-direction: column;
 }
 .memberPhoto {
   width: 50px;
@@ -362,7 +357,7 @@ button {
   border: none;
 }
 .recent {
-  width: 45%;
+  width: 95%;
 }
 
 /* Form */
@@ -418,10 +413,10 @@ select {
   margin-top: 20px;
 }
 .member-settings {
-  width: 50%;
+  width: 100%;
 }
 .settings {
-  width: 50%;
+  width: 100%;
 }
 .save-button {
     background-color: #ff6384;
@@ -443,10 +438,10 @@ select {
 /* Settings */
 .message-wrapper {
   display: inline-block;
-  width: 50%;
+  width: 100%;
 }
 .settings {
-  width: 45%;
+  width: 100%;
 }
 .settings-inner {
   display: flex;
@@ -466,11 +461,10 @@ select {
   width: 50%;
 }
 .settings-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-}
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 /* Toggle Switch */
 
 .onoffswitch {
@@ -521,7 +515,77 @@ select {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
+  .members-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  .members {
+    width: 45%;
+  }
+  .recent {
+    width: 45%;
+  }
+  .settings-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .search {
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+    margin-right: -10px;
+  }
+  .member-settings {
+    width: 50%;
+  }
+  .social-container {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+
+  }
+  .twitter, .facebook, .googleplus {
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 50px;
+    width: 15vw;
+    text-align: center;
+  }
+  .settings {
+    width: 50%;
+  }
+  .traffic-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.daily-traffic {
+  border-right: 1px solid #E0E0E0;
+  padding-right: 10px;
+}
+.daily-traffic, .mobile-users {
+  margin: 20px;
+  width: 50%;
+}
+.daily-traffic-container {
+  position: relative;
+  height: 160px;
+  width: 40vw;
+  }
+.message-wrapper {
+  display: inline-block;
+  width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
   .members-wrapper {
     display: flex;
     flex-direction: column;
