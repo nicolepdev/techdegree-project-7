@@ -94,12 +94,12 @@ body {
   background-color: #3f94a1;
 }
 .main {
-    display: flex;
-    background-color: #fff;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .header {
   margin-top: -10px;
@@ -221,6 +221,7 @@ input[name="q"]{
   width: 500px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-right: 10px;
   font-size: 1.1em;
   outline: none;
 }
@@ -603,15 +604,16 @@ select {
   .members-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
     border-bottom: 1px solid #E0E0E0;
   }
   .members {
-    width: 45%;
+    width: 40%;
   }
   .recent {
-    width: 45%;
+    width: 48%;
   }
   .settings-wrapper {
     display: flex;
