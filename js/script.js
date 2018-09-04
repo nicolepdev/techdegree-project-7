@@ -7,9 +7,6 @@ saveButton.click( ( event ) => {
   const currentTimezone = $('#timezone-select option:selected').val();
    // reminder to self: you found this on StackOverflow
 
-   let emailNotifications = $('#myonoffswitch');
-   let profilePrivacy = $('#myonoffswitch2');
-
   if ( currentTimezone === 'select' ) {
     alert('Please choose your timezone');
   } else {
@@ -251,5 +248,25 @@ $('#day').click(function () {
   $('#traffic-chart').hide();
   $('#traffic-chart2').hide();
   $('#traffic-chart3').show();
+
+});
+
+// messaging functionality
+
+$('.send').click(function () {
+
+  const user = $('#uname').val();
+  const message = $('#message').val();
+
+  if (user === '' || message === '') {
+
+    alert('Please choose a member name and type your message');
+
+  } else {
+
+    alert('Your message was sent');
+
+    location.reload();
+  }
 
 });
