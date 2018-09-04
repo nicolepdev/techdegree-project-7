@@ -515,7 +515,7 @@ select {
 
 /* Media Queries */
 
-@media (min-width: 1024px) {
+@media only and screen (min-width: 1025px) {
   .members-wrapper {
     display: flex;
     flex-direction: row;
@@ -570,7 +570,11 @@ select {
   border-right: 1px solid #E0E0E0;
   padding-right: 10px;
 }
-.daily-traffic, .mobile-users {
+.daily-traffic {
+  margin: 20px;
+  width: 50%;
+}
+.mobile-users {
   margin: 20px;
   width: 50%;
 }
@@ -585,7 +589,7 @@ select {
   }
 }
 
-@media (min-width: 768px) {
+@media only and screen (min-width: 768px) {
   .members-wrapper {
     display: flex;
     flex-direction: column;
