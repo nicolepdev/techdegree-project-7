@@ -500,7 +500,6 @@ select {
 }
 .onoffswitch-switch {
     display: block; width: 18px; margin: 6px;
-    background: ;
     position: absolute; top: 0; bottom: 0;
     right: 56px;
     border: 2px solid transparent; border-radius: 20px;
@@ -515,7 +514,7 @@ select {
 
 /* Media Queries */
 
-@media only and screen (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .members-wrapper {
     display: flex;
     flex-direction: row;
@@ -589,7 +588,7 @@ select {
   }
 }
 
-@media only and screen (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .members-wrapper {
     display: flex;
     flex-direction: column;
