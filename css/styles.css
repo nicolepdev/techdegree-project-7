@@ -212,7 +212,7 @@ nav.menu {
 }
 .search-bar {
   border-bottom: 1px solid #ccc;
-  width: 90%;
+  width: 100%;
   text-align: right;
 }
 input[name="q"]{
@@ -614,6 +614,7 @@ select {
   }
   .social-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-self: center;
 
@@ -623,11 +624,11 @@ select {
     border-radius: 2px;
     padding: 10px;
     margin: 50px;
-    width: 15vw;
+    width: 25vw;
     text-align: center;
   }
   .settings {
-    width: 50%;
+    width: 45%;
   }
   .traffic-stats {
     display: flex;
@@ -653,6 +654,6 @@ select {
   }
 .message-wrapper {
   display: inline-block;
-  width: 50%;
+  width: 45%;
   }
 }
