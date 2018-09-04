@@ -260,6 +260,7 @@ $('.bell').click(function () {
 
 $('#traffic-chart2').hide();
 $('#traffic-chart3').hide();
+$('#traffic-chart4').hide();
 
 $('#week').click(function () {
   $('#traffic-chart').show();

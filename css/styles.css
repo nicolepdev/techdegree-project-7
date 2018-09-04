@@ -233,7 +233,15 @@ input[name="q"]{
 }
 
 /* Alert */
-
+.bellCircle {
+  background-color: #ff6384;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 45px;
+  margin-top: -25px;
+}
 .alert, .alert2, .alert3 {
   display: flex;
   justify-content: space-between;
