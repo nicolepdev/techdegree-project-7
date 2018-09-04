@@ -136,7 +136,8 @@ body {
 .daily-traffic-container, .mobile-user-container {
   position: relative;
   height: 160px;
-  width: 80vw;
+  width: 75vw;
+  margin: 0 auto;
 }
 
 .traffic-stats {
@@ -647,10 +648,11 @@ select {
   margin: 20px;
   width: 50%;
 }
-.daily-traffic-container {
-  position: relative;
-  height: 160px;
-  width: 40vw;
+.daily-traffic-container, .mobile-user-container {
+    position: relative;
+    height: 160px;
+    width: 40vw;
+    margin: 0 auto;
   }
 .message-wrapper {
   display: inline-block;
