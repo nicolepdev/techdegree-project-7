@@ -99,6 +99,7 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .header {
   margin-top: -10px;
@@ -211,7 +212,7 @@ nav.menu {
 }
 .search-bar {
   border-bottom: 1px solid #ccc;
-  width: 100%;
+  width: 90%;
   text-align: right;
 }
 input[name="q"]{
