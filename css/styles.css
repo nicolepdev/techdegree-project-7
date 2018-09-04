@@ -514,6 +514,74 @@ select {
 
 /* Media Queries */
 
+@media only screen and (min-width: 768px) {
+  .members-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .members {
+    width: 95%;
+  }
+  .recent {
+    width: 95%;
+  }
+  .settings-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .search {
+    display: none;
+  }
+  .member-settings {
+    width: 100%;
+  }
+  .social-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .twitter {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .facebook {
+    width: 55%;
+    margin-bottom: 5px;
+    margin: 0 auto;
+  }
+  .googleplus {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .settings {
+    width: 95%;
+  }
+  .traffic-stats {
+    display: flex;
+    flex-direction: column;
+  }
+  .daily-traffic {
+    border: none;
+    width: 100%;
+  }
+  .daily-traffic-container {
+    height: 160px;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .mobile-users {
+    width: 100%;
+  }
+  .mobile-user-container {
+    margin: 0 auto;
+  }
+  .message-wrapper {
+    width: 95%;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .members-wrapper {
     display: flex;
@@ -585,73 +653,5 @@ select {
 .message-wrapper {
   display: inline-block;
   width: 50%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .members-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .members {
-    width: 95%;
-  }
-  .recent {
-    width: 95%;
-  }
-  .settings-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .search {
-    display: none;
-  }
-  .member-settings {
-    width: 100%;
-  }
-  .social-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 40px;
-  }
-  .twitter {
-    width: 55%;
-    margin: 0 auto;
-  }
-  .facebook {
-    width: 55%;
-    margin-bottom: 5px;
-    margin: 0 auto;
-  }
-  .googleplus {
-    width: 55%;
-    margin: 0 auto;
-  }
-  .settings {
-    width: 95%;
-  }
-  .traffic-stats {
-    display: flex;
-    flex-direction: column;
-  }
-  .daily-traffic {
-    border: none;
-    width: 100%;
-  }
-  .daily-traffic-container {
-    height: 160px;
-    width: 80vw;
-    margin: 0 auto;
-  }
-  .mobile-users {
-    width: 100%;
-  }
-  .mobile-user-container {
-    margin: 0 auto;
-  }
-  .message-wrapper {
-    width: 95%;
   }
 }
