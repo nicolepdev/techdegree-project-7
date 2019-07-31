@@ -17,4 +17,4 @@
 * Add Sass to the project ☑️
 * Refactor JavaScript to use ES6 ☑️
 
-## See live demo: [NickyApp web app dashboard project](https://nicolepdev.github.io/techdegree-project-7/)
+## See live demo: [NickyApp web app dashboard project](https://determined-dijkstra-ca870a.netlify.com/)
