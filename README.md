@@ -4,6 +4,11 @@
 ### Web app dashboard project for [Treehouse Front-End Techdegree](https://join.teamtreehouse.com/techdegree/)
 #### 📓 Instructor: Multiple - see Team Treehouse Front-end Techdegree link above
 #### 👩‍💻 Student: Nicole Peery
+
+## Project Overview:
+
+My challenge for this project was to take a mockup and build a web dashboard with JavaScript-driven charts and graphs. 
+
 ## Tools/skills used:
 * HTML5
 * CSS Grid
