@@ -1,3 +1,5 @@
+![Screenshot of web application dasboard with charts](https://res.cloudinary.com/dqe0hw0ru/image/upload/v1565186968/dashboard.png)
+
 # 📈 NickyApp
 ### Web app dashboard project for [Treehouse Front-End Techdegree](https://join.teamtreehouse.com/techdegree/)
 #### 📓 Instructor: Multiple - see Team Treehouse Front-end Techdegree link above
